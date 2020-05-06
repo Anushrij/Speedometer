@@ -1,0 +1,95 @@
+<!--
+	*index.html
+	*author: Manivannan R
+	*project: Speedometer
+-->
+<html>
+<head>
+<link href="css/speedometer.css" rel="stylesheet" type="text/css" />
+<script src="/jquery1.js/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="js/speedometer.js"></script>
+</head>
+<body>
+   <div id="time"></div>
+	<input id="demo" placeholder="Enter Kilometers"/>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/speedometer.js"></script>
+<script type="text/javascript">
+	$("#myValues").myfunc({divFact:10,eventListenerType:'keyup'});
+	$("#myValues2").myfunc({divFact:30});
+	$("#demo").myfunc({
+
+  /**Max value of the meter*/
+  maxVal              : 180,
+
+  /**Division value of the meter*/
+  divFact             : 10,
+
+  /**more than this leval, color will be red*/
+  dangerLevel         : 120,
+
+  /**reading begins angle*/
+  initDeg             : -45,
+
+  /**total angle of the meter reading*/
+  maxDeg              : 270,
+
+  /**radius of the meter circle*/
+  edgeRadius          : 150,
+
+  /**speed nobe height*/
+  speedNobeH          : 4,
+
+  /**speed nobe width*/
+  speedoNobeW         : 95,
+
+  /**speed nobe left position*/
+  speedoNobeL         : 13,
+
+  /**radius of indicators position*/
+  indicatorRadius     : 125,
+
+  /**radius of numbers position*/
+  indicatorNumbRadius : 90,
+
+  /**speedo-meter current value cont*/
+  speedPositionTxtWH  : 80,
+
+  /**indicator nob width*/
+  nobW                : 20,
+
+  /**indicator nob height*/
+  nobH                : 4,
+
+  /**indicator number width*/
+  numbW               : 30,
+
+  /**indicator number height*/
+  numbH               : 16,
+
+  /**indicator mid nob width*/
+  midNobW             : 10,
+
+  /**indicator mid nob height*/
+  midNobH             : 3,
+
+  /**no of small div between main div*/
+  noOfSmallDiv        : 2,
+
+  /**type of event listener*/
+  eventListenerType   : 'change',
+
+  /**Center value multiplier e.g. 1 x 1000 RPM*/
+  multiplier          : 1,
+
+  /**Label on guage Face*/
+  gagueLabel    : 'km/h'
+
+
+});
+
+
+</script>
+</html>
